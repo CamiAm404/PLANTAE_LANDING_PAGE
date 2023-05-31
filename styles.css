@@ -43,7 +43,7 @@ body {
   }
   /*Slider*/
   
-  .slider {
+  /*.slider {
     background-image: url("4.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;
@@ -62,7 +62,7 @@ body {
     50% {background-image: url("2.jpg");}
     75% {background-image: url("3.jpg");}
     100% {background-image: url("4.jpg");}
-  }
+  }*/
   /*---------------------*/
   .container {
   display: flex; /* Utilizamos flexbox para crear un diseño flexible */
