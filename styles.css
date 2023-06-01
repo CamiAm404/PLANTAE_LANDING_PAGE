@@ -1,269 +1,316 @@
 body {
-    background-color: #E7EFCD;/*color del cuerpo de la pagina*/
-    margin: 0;
-    padding: 0;
-  }
-  header  {
-    display: flex;
-    justify-content: space-between; /* Distribuye los elementos alineándolos a los extremos */
-    align-items: center; /* Centra verticalmente los elementos */
-  }
-  
-  header .logo {
-  float: left;
-  margin-left: 200px;/*Distancia del logo al borde izquierdo*/
-  }
-  
-  header .logo img {/*tamaño de la imagen*/
-  width: 100px;
-  height: 100px;
-  }
-  
-  header .menu {
-  list-style: none;
+  background-color: #E7EFCD;/*color del cuerpo de la pagina*/
   margin: 0;
   padding: 0;
-  }
-  
-  header .menu li {
-  display: inline-block;
-  margin-right: 70px;
-  }
-  
-  header .menu li a:hover {
-  color: #666;
-  }
-  
-  .get-app {
-  text-decoration: none;
-  color: #333;
-  padding: 5px;
-  margin-right: 200px ;
-  list-style: none;
-  }
-  /*Slider*/
-  
-  /*.slider {
-    background-image: url("images/4.jpg");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 640px;
-    height: 300px;
-    border-radius: 10px;
-    animation: slide 10s infinite linear;
-  }
-  
-  @keyframes slide {
-    25% {background-image: url("images/1.jpg");}
-    50% {background-image: url("images/2.jpg");}
-    75% {background-image: url("images/3.jpg");}
-    100% {background-image: url("images/4.jpg");}
-  }*/
-  /*---------------------*/
-  .container {
-  display: flex; /* Utilizamos flexbox para crear un diseño flexible */
-  align-items: center; /* Centramos verticalmente los elementos en el contenedor */
-  justify-content: center;
-  }
-  
-  .slogan {
+}
+header  {
+  display: flex;
+  justify-content: space-between; /* Distribuye los elementos alineándolos a los extremos */
+  align-items: center; /* Centra verticalmente los elementos */
+}
+
+header .logo {
+float: left;
+margin-left: 200px;/*Distancia del logo al borde izquierdo*/
+}
+
+header .logo img {/*tamaño de la imagen*/
+width: 100px;
+height: 100px;
+}
+
+header .menu {
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+header .menu li {
+display: inline-block;
+margin-right: 70px;
+}
+
+header .menu li a:hover {
+color: #666;
+}
+
+.get-app {
+text-decoration: none;
+color: #333;
+padding: 5px;
+margin-right: 200px ;
+list-style: none;
+}
+/*Slider*/
+
+#slider {
   position: relative;
-  flex: 1.5; /* El eslogan ocupará 1 parte del espacio horizontal disponible */
-  background-color: white;
-  padding: 20px;
-  height: 400px;
-  margin-left: 350px;/*Distancia del logo al borde izquierdo*/
-  }
-  .cuadro_externo {
+  width: 300px;
+  height: 600px;
+  margin: 80px auto;
+  font-family: 'Helvetica Neue', sans-serif;
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+#slider input {
+  display: none;
+}
+
+#slider label {
   position: absolute;
-  width: 700px;
-  height: 470px;
-  background-color: transparent;
-  border: 10px solid black;
-  margin-left: 420px;
-  }
-  
-  h1 {
-  font-size: 45px; /* Tamaño de fuente del eslogan */
-  margin-bottom: 40px; /* Margen inferior del eslogan */
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 400ms ease;
+}
+
+/* Slider Funcionalidad */
+
+#slider input:checked ~ label {
+  transform: translate3d(0, 0, 0);
+}
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  transform: translate3d(90%, 0, -100px); /* Aumentar el porcentaje para el triple de separación */
+}
+
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  transform: translate3d(180%, 0, -250px); /* Aumentar el porcentaje para el triple de separación */
+}
+
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  transform: translate3d(-180%, 0, -250px); /* Aumentar el porcentaje para el triple de separación */
+}
+
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  transform: translate3d(-90%, 0, -100px); /* Aumentar el porcentaje para el triple de separación */
+}
+/*---------------------*/
+.container {
+display: flex; /* Utilizamos flexbox para crear un diseño flexible */
+align-items: center; /* Centramos verticalmente los elementos en el contenedor */
+justify-content: center;
+}
+
+.slogan {
+position: relative;
+flex: 1.5; /* El eslogan ocupará 1 parte del espacio horizontal disponible */
+background-color: white;
+padding: 20px;
+height: 400px;
+margin-left: 350px;/*Distancia del logo al borde izquierdo*/
+}
+.cuadro_externo {
+position: absolute;
+width: 700px;
+height: 470px;
+background-color: transparent;
+border: 10px solid black;
+margin-left: 420px;
+}
+
+h1 {
+font-size: 45px; /* Tamaño de fuente del eslogan */
+margin-bottom: 40px; /* Margen inferior del eslogan */
+margin-left: 50px;/*Distancia del logo al borde izquierdo*/
+}
+h2{
+  margin-left: 50px;/*Distancia del logo al borde izquierdo*/
+}
+
+.imagen_celular {
+flex: 1; /* La imagen ocupará 1 parte del espacio horizontal disponible */
+text-align: right; /* Alineamos la imagen a la derecha del contenedor */
+margin-right: 400px;/*Distancia del logo al borde derecho*/
+}
+.imagen_celular img {
+width:  250px; /* Ancho de la imagen */
+height: 500px;/* Alto de la imagen */
+
+}
+.imagen_app {
+  flex: 1; /* La imagen ocupará 1 parte del espacio horizontal disponible */
   margin-left: 50px;/*Distancia del logo al borde izquierdo*/
   }
-  h2{
-    margin-left: 50px;/*Distancia del logo al borde izquierdo*/
+.imagen_app img {
+  width:  650px; /* Ancho de la imagen */
+  height: 70px;/* Alto de la imagen */
   }
+/*Segunda parte del cuerpo*/
+.columna_cuadros {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+
+.cuadro_simple {
+  background-color: white;
+  border: 2px solid #ccc;
+  padding: 20px;
+  width: 450px;
+  text-align: left;
+  margin-right: 400px;
+  margin-bottom: 50px;
+}
+
+.cuadro_titulo {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.cuadro_texto {
+  color: #666;
+}
+
+.imagen_app_3d {
+  flex: 1;
+  margin-left: 400px;
+}
+
+.imagen_app_3d img {
+  width: 420px;
+  height: 670px;
+  margin-top: 130px;
+}
+.fondo_blanco{
+  background-color: white;
+  height: 900px;
+  text-align: center;
+}
+/*Tercera parte del cuerpo*/
+#fondo{ /*imagen de fondo verde*/
+  background-image: url(fondo_verde.png);
+  background-size: cover; /*Para que la imagen cubra el tamaño de la pagina*/
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 1350px; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
+}
+#fondo h2{
+  color:white;
+  text-align: center;
+  margin-right: 60px;
+}
+.parrafo_titulo{
+  color:white;
+  text-align: center;
+}
+.parrafo1{
+  color:white;
+  text-align: center;
+}
+.parrafos_alineados1 { /*para que los dos primeros parrafos de la tercera seccion esten a la misma altura*/
+  display: flex;
+}
+.parrafo2{
+  flex: 1;
+  color:white;
+ 
+}
+#derecha{
+  text-align: right; /*parrafo este alineado a la derecha*/
   
-  .imagen_celular {
-  flex: 1; /* La imagen ocupará 1 parte del espacio horizontal disponible */
-  text-align: right; /* Alineamos la imagen a la derecha del contenedor */
-  margin-right: 400px;/*Distancia del logo al borde derecho*/
-  }
-  .imagen_celular img {
-  width:  250px; /* Ancho de la imagen */
-  height: 500px;/* Alto de la imagen */
-  
-  }
-  .imagen_app {
-    flex: 1; /* La imagen ocupará 1 parte del espacio horizontal disponible */
-    margin-left: 50px;/*Distancia del logo al borde izquierdo*/
-    }
-  .imagen_app img {
-    width:  650px; /* Ancho de la imagen */
-    height: 70px;/* Alto de la imagen */
-    }
-  /*Segunda parte del cuerpo*/
-  .columna_cuadros {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-  }
+}
+#izquierda{
+  text-align: left; /*parrafo este alineado a la izquierda*/
+ 
+}
+.parrafo3{
+  flex: 1;
+  color:white;
+
+}
+#derecha1{
+  text-align: right; /*parrafo este alineado a la derecha*/
+  margin-right: 339px; 
+}
+#izquierda1{
+  text-align: left; /*parrafo este alineado a la izquierda*/
+  margin-left: 285px; 
+}
+.parrafo4{
+  color:white;
+  text-align: center;
   
   
-  .cuadro_simple {
-    background-color: white;
-    border: 2px solid #ccc;
-    padding: 20px;
-    width: 450px;
-    text-align: left;
-    margin-right: 400px;
-    margin-bottom: 50px;
-  }
-  
-  .cuadro_titulo {
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .cuadro_texto {
-    color: #666;
-  }
-  
-  .imagen_app_3d {
-    flex: 1;
-    margin-left: 400px;
-  }
-  
-  .imagen_app_3d img {
-    width: 420px;
-    height: 670px;
-    margin-top: 130px;
-  }
-  .fondo_blanco{
-    background-color: white;
-    height: 850px;
-    text-align: center;
-  }
-  /*Tercera parte del cuerpo*/
-  #fondo{ /*imagen de fondo verde*/
-    background-image: url(images/fondo_verde.png);
-    background-size: cover; /*Para que la imagen cubra el tamaño de la pagina*/
-    background-position: center center;
-    background-repeat: no-repeat;
-    height: 1350px; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
-  }
-  #fondo h2{
-    color:white;
-    text-align: center;
-    margin-right: 60px;
-  }
-  .parrafo_titulo{
-    color:white;
-    text-align: center;
-  }
-  .parrafo1{
-    color:white;
-    text-align: center;
-  }
-  .parrafos_alineados1 { /*para que los dos primeros parrafos de la tercera seccion esten a la misma altura*/
-    display: flex;
-  }
-  .parrafo2{
-    flex: 1;
-    color:white;
-   
-  }
-  #derecha{
-    text-align: right; /*parrafo este alineado a la derecha*/
-    
-  }
-  #izquierda{
-    text-align: left; /*parrafo este alineado a la izquierda*/
-   
-  }
-  .parrafo3{
-    flex: 1;
-    color:white;
-  
-  }
-  #derecha1{
-    text-align: right; /*parrafo este alineado a la derecha*/
-    margin-right: 339px; 
-  }
-  #izquierda1{
-    text-align: left; /*parrafo este alineado a la izquierda*/
-    margin-left: 285px; 
-  }
-  .parrafo4{
-    color:white;
-    text-align: center;
-    
-    
-  }
-  .imagen {
-    flex: 1; 
-    text-align: center; /*centrar la imagen entre los textos de los 2 primeros parrafos*/
-  }
-  .imagen img {
-  
-    width: 250px;
-    height: 560px;
-  }
-  /*Pie de Pagina*/
-  .fondo_marron {
-    background-color: #483C1F;
-    height: 850px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .cuadro_grande {
-    background-color: white;
-    border: 2px solid #ccc;
-    padding: 20px;
-    width: 900px;
-    text-align: center;
-  }
-  .imagen_email {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
-  }
-  
-  .imagen_email img {
-    width: 70px;
-    height: 70px;
-  }
-  .imagen_wsp {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    flex: 1;
-  }
-  .imagen_wsp img {
-    width: 60px;
-    height: 60px;
-  }
-  .union_iconos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin-top: 20px;
-  }  
+}
+.imagen {
+  flex: 1; 
+  text-align: center; /*centrar la imagen entre los textos de los 2 primeros parrafos*/
+}
+.imagen img {
+
+  width: 250px;
+  height: 560px;
+}
+/*Pie de Pagina*/
+.fondo_marron {
+  background-color: #483C1F;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cuadro_grande {
+  background-color: white;
+  border: 2px solid #ccc;
+  padding: 20px;
+  width: 900px;
+  text-align: center;
+}
+.imagen_email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.imagen_email img {
+  width: 70px;
+  height: 70px;
+}
+.imagen_wsp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+.imagen_wsp img {
+  width: 60px;
+  height: 60px;
+}
+.union_iconos {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 20px;
+}
