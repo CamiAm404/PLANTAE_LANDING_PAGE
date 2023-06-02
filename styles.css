@@ -14,11 +14,6 @@ float: left;
 margin-left: 200px;/*Distancia del logo al borde izquierdo*/
 }
 
-header .logo img {/*tamaño de la imagen*/
-width: 100px;
-height: 100px;
-}
-
 header .menu {
 list-style: none;
 margin: 0;
@@ -205,59 +200,52 @@ height: 500px;/* Alto de la imagen */
 }
 /*Tercera parte del cuerpo*/
 #fondo{ /*imagen de fondo verde*/
-  background-image: url(images/fondo_verde.png);
+  background-image: url(fondo_verde2.png);
   background-size: cover; /*Para que la imagen cubra el tamaño de la pagina*/
   background-position: center center;
   background-repeat: no-repeat;
-  height: 1350px; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
-}
-#fondo h2{
+  height: 1200px; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
+  width: 100%;
   color:white;
   text-align: center;
-  margin-right: 60px;
 }
 .parrafo_titulo{
   color:white;
   text-align: center;
+  margin-left: 50px; 
 }
 .parrafo1{
   color:white;
   text-align: center;
+  margin-left: 50px; 
 }
 .parrafos_alineados1 { /*para que los dos primeros parrafos de la tercera seccion esten a la misma altura*/
   display: flex;
+  margin-left: 50px;
 }
 .parrafo2{
   flex: 1;
   color:white;
- 
 }
 #derecha{
   text-align: right; /*parrafo este alineado a la derecha*/
-  
+  margin-left: 50px; 
 }
 #izquierda{
   text-align: left; /*parrafo este alineado a la izquierda*/
- 
+  margin-left: 50px; 
 }
 .parrafo3{
   flex: 1;
   color:white;
-
 }
 #derecha1{
   text-align: right; /*parrafo este alineado a la derecha*/
-  margin-right: 339px; 
-}
-#izquierda1{
-  text-align: left; /*parrafo este alineado a la izquierda*/
-  margin-left: 285px; 
 }
 .parrafo4{
   color:white;
   text-align: center;
-  
-  
+  margin-left: 50px;
 }
 .imagen {
   flex: 1; 
