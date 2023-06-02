@@ -120,6 +120,12 @@ padding: 20px;
 height: 400px;
 margin-left: 350px;/*Distancia del logo al borde izquierdo*/
 }
+
+.slogan h1{
+  font-family: 'Montserrat'; /*Para agregar la fuente montserrat al slogan, si lo consideran necesario apliquen este mismo codigo a otra de las secciones*/
+  font-size: 43px;
+}
+
 .cuadro_externo {
 position: absolute;
 width: 700px;
@@ -204,11 +210,12 @@ height: 500px;/* Alto de la imagen */
   background-size: cover; /*Para que la imagen cubra el tamaño de la pagina*/
   background-position: center center;
   background-repeat: no-repeat;
-  height: 1200px; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
+  height: 1300px; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
   width: 100%;
   /*estas 2 lineas de código son para el titulo de la tercera seccion*/
   color:white;
   text-align: center;
+  font-family: 'Nunito Sans'; /*Para agregar la fuente nunito sans a la tercera seccion, si lo consideran necesario apliquen este mismo codigo a otra de las secciones*/
 }
 .parrafo_titulo{
   color:white;
@@ -256,7 +263,11 @@ height: 500px;/* Alto de la imagen */
 
   width: 250px;
   height: 560px;
+  color: rgba(43, 43, 43, 0.692);
+  border-radius: 30px;
+  box-shadow: 10px 7px 10px; /*agregar sombre detras de la imagen para dalr efecto 3d*/
 }
+
 /*Pie de Pagina*/
 .fondo_marron {
   background-color: #483C1F;
