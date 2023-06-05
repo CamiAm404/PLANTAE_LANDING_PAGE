@@ -14,17 +14,19 @@
     <body>
         <header>
             <!--Encabezado-->
-            <div class="logo">
-                <img src="images/logo2.png" alt="Logo">
+            <div id="top" class="logo">
+                <a href="http://plantae-app.com"><img src="images/logo2.png" alt="Logo"></a>
             </div>
             <ul class="menu">
-                <li>Nuestra App</li>
-                <li>Características</li>
-                <li>Interfaz</li>
+                <a href="#our-app"><li>Nuestra App</li></a>
+                <a href="#features"><li>Características</li></a>
+                <a href="#preview"><li>Interfaz</li></a>
                 <li>Contactanos</li>
                 <li>Nuestros Planes</li>
             </ul>
-            <li class="get-app">Get to App</li>
+            <li class="get-app">
+                <a href="#download"><button class="get-app-button">DESCARGAR</button></a>
+            </li>
         </header>
         <!--Fin Encabezado-->
         <br><br><br><br><br><br><br><br><br><br><br>
@@ -46,7 +48,7 @@
         <!--Primera parte del Cuerpo-->
         <br><br><br><br><br><br><br><br><br><br><br><br><br>
         <!--Segunda parte del Cuerpo-->
-        <div class="fondo_blanco">
+        <div id="our-app" class="fondo_blanco">
             <br>
             <br>
             <h2>SOBRE NUESTRA APP</h2>
@@ -84,7 +86,7 @@
         <!--Segunda parte del Cuerpo-->
         
         <!--Tercera parte del Cuerpo-->
-        <div class="fondo_verde">
+        <div id="features" class="fondo_verde">
             <div id="fondo" class="fondo_verde">
                 <br>
                 <br>
@@ -160,7 +162,7 @@
 
         <!-- Cuarta parte del Cuerpo - Slider-->
         
-        <div class="fondo_blanco">
+        <div id="preview" class="fondo_blanco">
         <br><br><br>
         <h2>ECHA UN VISTAZO A LA INTERFAZ DE NUESTRA APLICACIÓN</h2>
         <p>Contamos con un diseño de interfaz intuitivo,amigable a cualquier usuario</p>
@@ -184,8 +186,55 @@
         <!-- Cuarta parte del Cuerpo - Fin de Slider-->
 
         <!-- Ultima parte del cuerpo - Descarga la app -->
-        <h2>Descarga la app ahora</h2>
+        <div id="download" class="download-container">
+            <div class="left-download-container">
+                <a class="download-title">DESCARGA LA APP AHORA</a>
+                <br>
+                <div class="download-buttons">
+                    <a href="https://play.google.com" target="_blank"><img src="images/googlePlayStore.png" class="store-button" alt="Google Play Store"></a>
+                    <a href="https://www.apple.com/app-store/" target="_blank"><img src="images/appleAppStore.png" class="store-button" alt="Apple App Store"></a>
+                    <a href="https://appgallery.huawei.com" target="_blank"><img src="images/huaweiAppGallery.png" class="store-button" alt="Huawei App Gallery"></a>
+                </div>
+                
+                <div class="app-stats">
+                    <button class="stats-button">
+                        <img src="images/whiteDownloadIcon.png" class="stats-button-icon">
+                        <br>
+                        +59865
+                        <br>
+                        DESCARGAS
+                    </button>
+
+                    <button class="stats-button">
+                        <img src="images/whiteLikeIcon.png" class="stats-button-icon">
+                        <br>
+                        +29852
+                        <br>
+                        ME GUSTA
+                    </button>
+
+                    <button class="stats-button">
+                        <img src="images/whiteStarIcon.png" class="stats-button-icon">
+                        <br>
+                        +15000
+                        <br>
+                        5 ESTRELLAS
+                    </button>
+                </div>
+            </div>
+
+            <div class="right-download-container">
+                <img src="images/appOverview3D.png" class="app-overview">
+            </div>
+        </div>
+        
         <!-- Ultima parte del cuerpo - Descarga la app -->
+        
+        <div class="back-to-top">
+            <a href="#top">
+                <img src="images/whiteUpArrow.png">
+            </a>
+        </div>
 
         <!--Pie de Pagina-->
         <div class="fondo_marron">
@@ -239,7 +288,7 @@
                  </div>
            </div>
            <div class="contenedor2">
-            <small>&copy; 2023 <b>Plantae</b> - Todos los derechos reservado</small>
+            <small>&copy; 2023 <b>Plantae</b> - Todos los derechos reservados</small>
            </div>
 
         </footer>
