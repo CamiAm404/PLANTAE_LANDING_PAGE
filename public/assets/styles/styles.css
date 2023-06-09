@@ -217,7 +217,7 @@ height: 500px;/* Alto de la imagen */
 }
 /*Tercera parte del cuerpo*/
 #fondo{ /*imagen de fondo verde*/
-  background-image: url(images/fondo_verde2.png);
+  background-image: url(../images/fondo_verde2.png);
   background-size: cover; /*Para que la imagen cubra el tamaño de la pagina*/
   background-position: center center;
   background-repeat: no-repeat;
