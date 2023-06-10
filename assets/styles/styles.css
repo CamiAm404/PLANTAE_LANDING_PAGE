@@ -138,13 +138,14 @@ position: relative;
 flex: 1.5; /* El eslogan ocupará 1 parte del espacio horizontal disponible */
 background-color: white;
 padding: 20px;
-height: 400px;
+height: 380px;
 margin-left: 350px;/*Distancia del logo al borde izquierdo*/
 }
 
 .slogan h1{
   font-family: 'Montserrat'; /*Para agregar la fuente montserrat al slogan, si lo consideran necesario apliquen este mismo codigo a otra de las secciones*/
   font-size: 43px;
+  color: #483C1F;
 }
 
 .cuadro_externo {
@@ -152,7 +153,7 @@ position: absolute;
 width: 700px;
 height: 470px;
 background-color: transparent;
-border: 10px solid black;
+border: 10px solid #483C1F;
 margin-left: 420px;
 }
 
@@ -222,7 +223,7 @@ height: 500px;/* Alto de la imagen */
 }
 .fondo_blanco{
   background-color: white;
-  height: 950px;
+  height: 930px;
   text-align: center;
 }
 /*Tercera parte del cuerpo*/
@@ -312,12 +313,12 @@ p {
   padding-bottom: 10px;
   padding-left: 16px;
   padding-right: 16px;
-  background-color:green;
+  background-color:#7E8925;
   color: white;
   font-family:'Nunito Sans';
   font-size: 17px;
   font-weight: bold;
-  border: rgb(16, 171, 16);
+  border: rgb(198, 200, 108);
   border-style: solid;
   border-width: 2px;
   border-radius: 3px;
@@ -480,7 +481,8 @@ p {
   gap: 20px;
 }
 .barra1{
-   padding: 35px;
+  padding: 15px;
+  margin-left: 20px;
 }
 .barra1 p{
   color: #fff;
@@ -497,8 +499,8 @@ p {
 }
 .barra1 img{
   border-radius: 25px;
-  width: 240px;
-  height: 140px; 
+  width: 140px;
+  height: 80px; 
 }
 .barra2 h3{
   color: #fff;
@@ -509,9 +511,9 @@ p {
   text-decoration: none;
 }
 .barra3 img{
-  width: 268px;
-  height: 197px;
-}
+  width: 50%;
+  height: 55%;
+} 
 .barra3 h3{
   color: #fff;
 }
