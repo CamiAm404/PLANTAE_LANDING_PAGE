@@ -20,7 +20,7 @@ margin-left: 200px;/*Distancia del logo al borde izquierdo*/
 
 .menu li{
   color:black;
-  font-family: 'Montserrat';
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-decoration:none;
 }
@@ -166,13 +166,13 @@ height: 500px;/* Alto de la imagen */
 
 }
 .imagen_app {
-  flex: 1; /* La imagen ocupará 1 parte del espacio horizontal disponible */
+  flex: 1;  /*La imagen ocupará 1 parte del espacio horizontal disponible */
   margin-left: 50px;/*Distancia del logo al borde izquierdo*/
-  }
+}
 .imagen_app img {
   width:  650px; /* Ancho de la imagen */
   height: 70px;/* Alto de la imagen */
-  }
+}
 /*Segunda parte del cuerpo*/
 .columna_cuadros {
   display: flex;
@@ -221,12 +221,22 @@ height: 500px;/* Alto de la imagen */
   background-size: cover; /*Para que la imagen cubra el tamaño de la pagina*/
   background-position: center center;
   background-repeat: no-repeat;
-  height: 1300px; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
+  height: 1450px; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
   width: 100%;
   /*estas 2 lineas de código son para el titulo de la tercera seccion*/
   color:white;
   text-align: center;
-  font-family: 'Nunito Sans'; /*Para agregar la fuente nunito sans a la tercera seccion, si lo consideran necesario apliquen este mismo codigo a otra de las secciones*/
+}
+h1, h2, h3, h4{
+  font-family: 'Montserrat', sans-serif;
+}
+.imagen-icono {
+  width: 60px;
+  height: 60px;
+}
+p {
+  font-family: 'Montserrat', 'Nunito Sans', sans-serif; /*Para agregar la fuente nunito sans a la tercera seccion, si lo consideran necesario apliquen este mismo codigo a otra de las secciones*/
+  font-size: 16px;
 }
 .parrafo_titulo{
   color:white;
@@ -318,7 +328,7 @@ height: 500px;/* Alto de la imagen */
 .download-container{
   display: flex;
   background-color: white;
-  font-family: 'Nunito Sans';
+  font-family: 'Nunito Sans', sans-serif;
   padding-bottom: 100px;
 }
 
@@ -337,6 +347,7 @@ height: 500px;/* Alto de la imagen */
   margin-top: 250px;
   margin-left: 300px;
   font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   display: inline-block;
 }
