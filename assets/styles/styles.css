@@ -538,3 +538,64 @@ p {
 @media screen and (max-width: 700px){
   
 }
+/* Nuestros Planes */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+header {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.plans-container {
+  background-color: #e7efcd;
+  border-radius: 2rem;
+  padding: 2rem;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-around;
+}
+
+.plan {
+  text-align: center;
+}
+
+.plan-box {
+  background-color: #ffffff;
+  border-radius: 2rem;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.plan-box ul li {
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.check-mark {
+  color: #
+80c472;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  position: absolute;
+  left: -1.5rem;
+  top: 0.4rem;
+}
+
+.get-app {
+  background-color: #80c472;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+
