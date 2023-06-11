@@ -214,14 +214,12 @@ list-style: none;
   align-items: flex-end;
 }
 
-
 .cuadro_simple {
   background-color: white;
   border: 2px solid #ccc;
   padding: 20px;
   width: 450px;
   text-align: left;
-  margin-right: 400px;
   margin-bottom: 50px;
 }
 
@@ -235,19 +233,32 @@ list-style: none;
 }
 
 .imagen_app_3d {
-  flex: 1;
-  margin-left: 400px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .imagen_app_3d img {
-  width: 420px;
-  height: 670px;
+  max-width: 100%;
+  height: auto;
   margin-top: 130px;
 }
-.fondo_blanco{
+
+.fondo_blanco {
   background-color: white;
-  height: 930px;
   text-align: center;
+  padding-bottom: 50px;
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 600px) {
+  .columna_cuadros {
+    align-items: center;
+  }
+
+  .cuadro_simple {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 /*Tercera parte del cuerpo*/
 #fondo{ /*imagen de fondo verde*/
