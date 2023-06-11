@@ -137,63 +137,71 @@ list-style: none;
 #s5:checked ~ #slide4 {
   transform: translate3d(-90%, 0, -100px); /* Aumentar el porcentaje para el triple de separación */
 }
-/*---------------------*/
+/*Primera parte---------------------*/
 .container {
-display: flex; /* Utilizamos flexbox para crear un diseño flexible */
-align-items: center; /* Centramos verticalmente los elementos en el contenedor */
-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Cambio en la dirección de flexión */
+  min-height: 700px; /* Altura mínima para evitar que se solape el contenido */
 }
 
 .slogan {
-position: relative;
-flex: 1.5; /* El eslogan ocupará 1 parte del espacio horizontal disponible */
-background-color: white;
-padding: 20px;
-height: 380px;
-margin-left: 350px;/*Distancia del logo al borde izquierdo*/
+  position: relative;
+  flex: 1.5;
+  background-color: white;
+  padding: 2rem;
+  height: 39rem;
+  margin-left: 35rem; /* Ajusta este valor según tus necesidades */
+  margin-right: 20rem;
 }
-
-.slogan h1{
-  font-family: 'Montserrat'; /*Para agregar la fuente montserrat al slogan, si lo consideran necesario apliquen este mismo codigo a otra de las secciones*/
-  font-size: 43px;
+.slogan h1 {
+  font-family: 'Montserrat';
+  font-size: 3.5rem;
   color: #483C1F;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
 }
 
-.cuadro_externo {
-position: absolute;
-width: 700px;
-height: 470px;
-background-color: transparent;
-border: 10px solid #483C1F;
-margin-left: 420px;
+.slogan h2 {
+  font-family: 'Montserrat';
+  color: #483C1F;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
 }
-
-h1 {
-font-size: 45px; /* Tamaño de fuente del eslogan */
-margin-bottom: 40px; /* Margen inferior del eslogan */
-margin-left: 50px;/*Distancia del logo al borde izquierdo*/
-}
-h2{
-  margin-left: 50px;/*Distancia del logo al borde izquierdo*/
-}
-
 .imagen_celular {
-flex: 1; /* La imagen ocupará 1 parte del espacio horizontal disponible */
-text-align: right; /* Alineamos la imagen a la derecha del contenedor */
-margin-right: 400px;/*Distancia del logo al borde derecho*/
+  margin-top: 2rem; /* Espacio entre el eslogan y la imagen */
 }
-.imagen_celular img {
-width:  250px; /* Ancho de la imagen */
-height: 500px;/* Alto de la imagen */
 
+.imagen_celular img {
+  width: 25rem;
+  height: 50rem;
 }
+
+@media (min-width: 1200px) {
+  .container {
+      flex-direction: row; /* Volver a la dirección de flexión original */
+  }
+
+  .imagen_celular {
+      margin-top: 0; /* Reiniciar el espacio entre el eslogan y la imagen */
+      margin-right: 22.5rem;
+  }
+}
+
 .imagen_app {
-  flex: 1;  /*La imagen ocupará 1 parte del espacio horizontal disponible */
-  margin-left: 50px;/*Distancia del logo al borde izquierdo*/
+  flex: 1;
+  margin-left: 3.125rem;
+  margin-top: 5rem;
 }
+
 .imagen_app img {
-  width:  650px; /* Ancho de la imagen */
-  height: 70px;/* Alto de la imagen */
+  width: 55rem;
+  height: 5.5rem;
 }
 /*Segunda parte del cuerpo*/
 .columna_cuadros {
