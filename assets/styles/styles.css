@@ -539,19 +539,19 @@ p {
   
 }
 /* Nuestros Planes */
-html {
-  font-size: 62.5%;
-}
-
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Nunito Sans", Arial, sans-serif;
+  line-height: 1.5rem;
 }
 
 header {
   text-align: center;
-  margin: 5rem 0;
+  margin: 3rem 0;
 }
 
+h1, h2 {
+  font-family: "Montserrat", Arial, sans-serif;
+}
 .plans-container {
   background-color: #e7efcd;
   border-radius: 2rem;
@@ -564,7 +564,45 @@ header {
 }
 
 .plan {
-  text-align: center;
+  text-align: justify;
+}
+
+.checklist {
+  list-style-type: none;
+  padding: 0;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: #e7efcd;
+}
+
+.checkmark::after {
+  content: '';
+  position: absolute;
+  display: block;
+  left: 0.7rem;
+  top: 0.3rem;
+  width: 0.5rem;
+  height: 1rem;
+  border: solid #7e8925;
+  border-width: 0 0.2rem 0.2rem 0;
+  transform: rotate(45deg);
+}
+
+.checklist li:hover .checkmark::after {
+  display: block;
 }
 
 .plan-box {
@@ -573,29 +611,44 @@ header {
   padding: 2rem;
   margin-bottom: 2rem;
 }
-
-.plan-box ul li {
-  margin-bottom: 1rem;
-  position: relative;
-}
-
-.check-mark {
-  color: #
-80c472;
-  font-weight: bold;
-  margin-right: 0.5rem;
-  position: absolute;
-  left: -1.5rem;
-  top: 0.4rem;
+.plan-box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .get-app {
-  background-color: #80c472;
+  background-color: #7e8925;
   color: #ffffff;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
   margin-top: 1rem;
+  position: relative;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.get-app::after {
+  content: '\2192'; /* Código de flecha derecha */
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  transform: translateY(-50%);
+}
+
+.get-app:hover {
+  background-color: #ffffff;
+  color: #7e8925;
+  border-color: #7e8925;
+}
+
+.get-app:hover::after {
+  color: #7e8925;
+}
+
+.get-app:hover::before {
+  border-color: #ffffff;
 }
 
 
