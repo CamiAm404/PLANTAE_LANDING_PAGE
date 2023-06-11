@@ -12,16 +12,20 @@ body {
   margin: 0;
   padding: 0;
 }
-header  {
+  header  {
+  position: sticky;
+  top: 0;
+  background-color: #E7EFCD;
+  padding: 10px;
   display: flex;
-  font-size: 1.6rem;
-  justify-content: space-between; /* Distribuye los elementos alineándolos a los extremos */
-  align-items: center; /* Centra verticalmente los elementos */
-  position: fixed;
+  justify-content: space-between;/* Distribuye los elementos alineándolos a los extremos */
+  align-items: center;/* Centra verticalmente los elementos */
   z-index: 100000;
+  font-size: 1.6rem;
   width: 100%;
   transition: 0.6s
 }
+
 
 header ul{
   font-size: 0;
