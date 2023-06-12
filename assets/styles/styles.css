@@ -184,16 +184,19 @@ list-style: none;
   height: 50rem;
 }
 
+/* 
+Se traslado a la tercera sección
 @media (min-width: 1200px) {
   .container {
-      flex-direction: row; /* Volver a la dirección de flexión original */
+      flex-direction: row; /* Volver a la dirección de flexión original 
   }
 
   .imagen_celular {
-      margin-top: 0; /* Reiniciar el espacio entre el eslogan y la imagen */
+      margin-top: 0; /* Reiniciar el espacio entre el eslogan y la imagen 
       margin-right: 22.5rem;
   }
-}
+  
+} */
 
 .imagen_app {
   flex: 1;
@@ -249,6 +252,10 @@ list-style: none;
   padding-bottom: 50px;
 }
 
+.fondo_blanco h2{
+  font-size: 2rem;
+}
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
   .columna_cuadros {
@@ -266,7 +273,7 @@ list-style: none;
   background-size: cover; /*Para que la imagen cubra el tamaño de la pagina*/
   background-position: center center;
   background-repeat: no-repeat;
-  height: 1450px; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
+  height: auto; /*Se le coloca esta altura para que entre todo el texto requerido dentro del fondo*/
   width: 100%;
   /*estas 2 lineas de código son para el titulo de la tercera seccion*/
   color:white;
@@ -275,64 +282,116 @@ list-style: none;
 h1, h2, h3, h4{
   font-family: 'Montserrat', sans-serif;
 }
-.imagen-icono {
-  width: 60px;
-  height: 60px;
-}
 p {
   font-family: 'Montserrat', 'Nunito Sans', sans-serif; /*Para agregar la fuente nunito sans a la tercera seccion, si lo consideran necesario apliquen este mismo codigo a otra de las secciones*/
-  font-size: 16px;
+  font-size: 1.6rem;
+}
+.imagen-icono {
+  width: 6rem;
+  height: 6rem;
+}
+.imagen img {
+
+  width: 25rem;
+  height: 56rem;
+  color: rgba(43, 43, 43, 0.692);
+  border-radius: 3rem;
+  box-shadow: 1rem 0.7rem 1rem; /*agregar sombre detras de la imagen para dalr efecto 3d*/
+} 
+.title{
+  font-size: 2rem;
 }
 .parrafo_titulo{
   color:white;
   text-align: center;
-  margin-left: 50px; 
 }
 .parrafo1{
   color:white;
   text-align: center;
-  margin-left: 50px; 
 }
-.parrafos_alineados1 { /*para que los parrafos de la derecha e izquierda de la tercera seccion esten a la misma altura*/
-  display: flex;
-  margin-left: 50px;
+.parrafo1 h4{
+  font-size: 1.7rem;
 }
 .parrafo2{
-  flex: 1;
   color:white;
+  text-align: center; 
 }
-#derecha{
-  text-align: right; /*parrafo este alineado a la derecha*/
-  margin-left: 50px; 
-}
-#izquierda{
-  text-align: left; /*parrafo este alineado a la izquierda*/
-  margin-left: 50px; 
+.parrafo2 h4{
+  font-size: 1.7rem;
 }
 .parrafo3{
-  flex: 1;
   color:white;
+  text-align: center;
 }
-#derecha1{
-  text-align: right; /*parrafo inferior este alineado a la derecha*/
+.parrafo3 h4{
+  font-size: 1.7rem;
 }
 .parrafo4{
   color:white;
   text-align: center;
-  margin-left: 50px;
 }
-.imagen {
-  flex: 1; 
-  text-align: center; /*centrar la imagen entre los textos de los 2 primeros parrafos*/
+.parrafo4 h4{
+  font-size: 1.7rem;
 }
-.imagen img {
+/* Estilos para pantallas pequeñas */
+@media (min-width: 1024px) {
+  .container {
+    flex-direction: row; /* Volver a la dirección de flexión original */
+}
 
-  width: 250px;
-  height: 560px;
-  color: rgba(43, 43, 43, 0.692);
-  border-radius: 30px;
-  box-shadow: 10px 7px 10px; /*agregar sombre detras de la imagen para dalr efecto 3d*/
+.imagen_celular {
+    margin-top: 0; /* Reiniciar el espacio entre el eslogan y la imagen */
+    margin-right: 22.5rem;
 }
+  .parrafo_titulo{
+    color:white;
+    text-align: center;
+    margin-left: 5rem; 
+  }
+  .parrafo1{
+    color:white;
+    text-align: center;
+    margin-left: 5rem; 
+  }
+  .parrafos_alineados { /*para que los parrafos de la derecha e izquierda de la tercera seccion esten a la misma altura*/
+    display: flex;
+    margin-left: 5rem;
+  }
+  .parrafo2{
+    flex: 1;
+    color:white;
+  }
+  #derecha{
+    text-align: right; /*parrafo este alineado a la derecha*/
+    margin-left: 5rem; 
+  }
+  #izquierda{
+    text-align: left; /*parrafo este alineado a la izquierda*/
+    margin-right: 4rem;
+  }
+  .parrafo3{
+    flex: 1;
+    color:white;
+  }
+  #derecha1{
+    text-align: right; /*parrafo inferior este alineado a la derecha*/
+  }
+  #izquierda1{
+    text-align: left; /*parrafo inferior este alineado a la derecha*/
+  }
+  .parrafo4{
+    color:white;
+    text-align: center;
+    margin-left: 5rem;
+  }
+  .imagen {
+    flex: 1; 
+    text-align: center; /*centrar la imagen entre los textos de los 2 primeros parrafos*/
+    margin-right: 1rem;
+  }
+}
+
+/* Fin tercera parte del cuerpo */
 
 /* INICIO Descargar app */
 
@@ -513,6 +572,7 @@ p {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño */
   gap: 20px;
+  font-size: 1.6rem;
 }
 .barra1{
   padding: 15px;
@@ -553,6 +613,7 @@ p {
 }
 .contenedor2{
   text-align: center;
+  font-size: 1.3rem;
 }
 .contenedor2 small{
   color: #fff;
@@ -562,19 +623,6 @@ p {
   
 }
 /* Nuestros Planes */
-body {
-  font-family: "Nunito Sans", Arial, sans-serif;
-  line-height: 1.5rem;
-}
-
-header {
-  text-align: center;
-  margin: 3rem 0;
-}
-
-h1, h2 {
-  font-family: "Montserrat", Arial, sans-serif;
-}
 .plans-container {
   background-color: #e7efcd;
   border-radius: 2rem;
@@ -640,8 +688,7 @@ h1, h2 {
   padding: 20px;
   margin-bottom: 20px;
 }
-
-.get-app {
+.get-app2 {
   background-color: #7e8925;
   color: #ffffff;
   padding: 0.5rem 1rem;
@@ -651,8 +698,11 @@ h1, h2 {
   position: relative;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-
-.get-app::after {
+.enlace {
+  color:inherit;
+  text-decoration: inherit;
+}
+.get-app2::after {
   content: '\2192'; /* Código de flecha derecha */
   position: absolute;
   top: 50%;
@@ -660,20 +710,16 @@ h1, h2 {
   transform: translateY(-50%);
 }
 
-.get-app:hover {
+.get-app2:hover {
   background-color: #ffffff;
   color: #7e8925;
   border-color: #7e8925;
 }
 
-.get-app:hover::after {
+.get-app2:hover::after {
   color: #7e8925;
 }
 
-.get-app:hover::before {
+.get-app2:hover::before {
   border-color: #ffffff;
 }
-
-
-
-
