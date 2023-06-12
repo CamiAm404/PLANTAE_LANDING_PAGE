@@ -623,6 +623,12 @@ p {
   
 }
 /* Nuestros Planes */
+
+.plans-container h2{
+  text-align: center;
+  font-size: 2rem;
+}
+
 .plans-container {
   background-color: #e7efcd;
   border-radius: 2rem;
