@@ -256,6 +256,24 @@ Se traslado a la tercera sección
   font-size: 2rem;
 }
 
+.responsive-video {
+  position: relative;
+  padding-bottom: 30px;  /*Proporción del video (altura / anchura) */
+  padding-top: 30px; /* Espacio adicional arriba del iframe (opcional) */
+  /* height: 0; */
+  max-width: 100%;
+  overflow: hidden;
+  margin-bottom: -5px;
+}
+
+.responsive-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+} 
+
 /* Media query para pantallas pequeñas */
 @media (max-width: 600px) {
   .columna_cuadros {
@@ -296,7 +314,7 @@ p {
   height: 56rem;
   color: rgba(43, 43, 43, 0.692);
   border-radius: 3rem;
-  box-shadow: 1rem 0.7rem 1rem; /*agregar sombre detras de la imagen para dalr efecto 3d*/
+  box-shadow: 1rem 0.7rem 1rem; /*agregar sombre detras de la imagen para darle efecto 3d*/
 } 
 .title{
   font-size: 2rem;
@@ -333,16 +351,16 @@ p {
 .parrafo4 h4{
   font-size: 1.7rem;
 }
-/* Estilos para pantallas pequeñas */
+/* Estilos para pantallas grandes */
 @media (min-width: 1024px) {
   .container {
     flex-direction: row; /* Volver a la dirección de flexión original */
-}
+  }
 
-.imagen_celular {
+  .imagen_celular {
     margin-top: 0; /* Reiniciar el espacio entre el eslogan y la imagen */
     margin-right: 22.5rem;
-}
+  }
   .parrafo_titulo{
     color:white;
     text-align: center;
@@ -389,6 +407,10 @@ p {
     text-align: center; /*centrar la imagen entre los textos de los 2 primeros parrafos*/
     margin-right: 1rem;
   }
+  .embed-container {
+    width: 200px;
+    height: 150px;
+  } 
 }
 
 /* Fin tercera parte del cuerpo */
