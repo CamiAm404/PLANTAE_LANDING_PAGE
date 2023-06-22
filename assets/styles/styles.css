@@ -284,6 +284,31 @@ Se traslado a la tercera sección
     width: 100%;
     margin-bottom: 20px;
   }
+
+  .right-download-container{
+    text-align: center;
+  }
+
+  .left-download-container{
+    order: 1;
+    margin-left: 0rem;
+  }
+  
+  .right-download-container{
+    order: 2;
+  }
+
+  .plans {
+    justify-content: space-evenly;
+  }
+
+  .plan{
+    margin-right: 2rem;
+  }
+
+  .plan-box{
+    overflow: auto;
+  }
 }
 /*Tercera parte del cuerpo*/
 #fondo{ /*imagen de fondo verde*/
@@ -320,46 +345,33 @@ p {
   font-size: 2rem;
 }
 .parrafo_titulo{
+  color:white;
   text-align: center;
 }
 .parrafo1{
+  color:white;
   text-align: center;
-}
-.parrafo1 p{
-  width: 400px;
-  margin: 0 auto;
-  white-space: normal;
 }
 .parrafo1 h4{
   font-size: 1.7rem;
 }
-.parrafos_derecha{
+.parrafo2{
+  color:white;
   text-align: center; 
-}
-.parrafos_izquierda{
-  text-align: center; 
-}
-.parrafo2 {
-  width: 400px;
-  margin: 0 auto;
-  white-space: normal;
 }
 .parrafo2 h4{
   font-size: 1.7rem;
 }
-.parrafo3 {
-  white-space: normal;
-  margin: 0 auto;
-  width: 400px;
+.parrafo3{
+  color:white;
+  text-align: center;
 }
 .parrafo3 h4{
   font-size: 1.7rem;
 }
-.parrafo4 p{
-  width: 400px;
+.parrafo4{
+  color:white;
   text-align: center;
-  white-space: normal;
-  margin: 0 auto;
 }
 .parrafo4 h4{
   font-size: 1.7rem;
@@ -388,29 +400,27 @@ p {
     display: flex;
     margin-left: 5rem;
   }
-  .parrafos_derecha{
+  .parrafo2{
     flex: 1;
     color:white;
   }
   #derecha{
     text-align: right; /*parrafo este alineado a la derecha*/
-    margin-left: 25rem; 
+    margin-left: 5rem; 
   }
   #izquierda{
     text-align: left; /*parrafo este alineado a la izquierda*/
-    margin-right: 25rem;
+    margin-right: 4rem;
   }
-  .parrafos_izquierda{
+  .parrafo3{
     flex: 1;
     color:white;
   }
   #derecha1{
     text-align: right; /*parrafo inferior este alineado a la derecha*/
-    margin-left: 25rem; 
   }
   #izquierda1{
     text-align: left; /*parrafo inferior este alineado a la derecha*/
-    margin-right: 25rem;
   }
   .parrafo4{
     color:white;
@@ -468,59 +478,58 @@ p {
 /* SECCIÓN DE DESCARGA DE LA APP */
 .download-container{
   display: flex;
+  flex-wrap: wrap;
   background-color: white;
   font-family: 'Nunito Sans', sans-serif;
-  padding-bottom: 100px;
+  padding-bottom: 10rem;
 }
 
 .left-download-container{
-  flex: 1.5;
+  flex: 1 1 50%;
+  text-align: center;
 }
 
 .right-download-container{
-  flex: 1;
-  text-align: right;
-  margin-right: 400px;
-  margin-top: 100px;
+  flex: 1 1 40%;
+  margin-top: 10rem;
+  text-align: center;
 }
 
 .download-title{
-  margin-top: 250px;
-  margin-left: 300px;
+  margin-top: 25rem; 
   font-size: 30px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   display: inline-block;
 }
 
-.download-buttons{
-  margin-left: 300px;
-  margin-top: 30px;
+.download-buttons{ 
+  margin-top: 3rem;
 }
 
 .store-button{
-  margin-right: 30px;
-  width: 25%;
-  height: 25%;
+  margin-right: 3rem;
+  width: 18rem;
 }
 
 .app-stats{
-  margin-top: 50px;
-  margin-left: 300px;
-  padding-bottom: 50px;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
 }
 
 .stats-button{
-  padding-top: 25px;
-  padding-bottom: 15px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-right: 35px;
+  flex: 0 0 30%;
+  font-size: 20px;
+  padding-top: 1.25em;
+  padding-bottom: 0.75em;
+  padding-left: 1.6em;
+  padding-right: 1.6em;
+  margin-right: 1.75em;
+  margin-bottom: 1.75em;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.25em;
   font-family: "Nunito Sans";
   font-weight: bold;
-  font-size: 20px;
   color: white;
   background-color: #7E8925;
   transition: opacity 0.2s;
@@ -535,8 +544,7 @@ p {
 }
 
 .stats-button-icon{
-  width: 25%;
-  height: 25%;
+  width: 2.5em;
 }
 
 /* FIN Descargar app */
@@ -674,11 +682,32 @@ p {
 
 .plans {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
 .plan {
   text-align: justify;
+  font-size: 12px;
+}
+
+.plan-box {
+  background-color: #ffffff;
+  border-radius: 2em;
+  padding: 2em;
+  margin-bottom: 2em;
+  height: 25em;
+  position: relative;
+}
+
+.plan-get-app{
+  color:inherit;
+  text-decoration: inherit;
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  left: 50%;
+  top: 90%;
+  transform: translate(-50%, -50%);
 }
 
 .checklist {
@@ -688,16 +717,16 @@ p {
 
 .checklist li {
   position: relative;
-  padding-left: 2rem;
-  margin-bottom: 1rem;
+  padding-left: 2em;
+  margin-bottom: 1em;
 }
 
 .checkmark {
   position: absolute;
   top: 0;
   left: 0;
-  height: 2rem;
-  width: 2rem;
+  height: 2em;
+  width: 2em;
   border-radius: 50%;
   background-color: #e7efcd;
 }
@@ -706,12 +735,12 @@ p {
   content: '';
   position: absolute;
   display: block;
-  left: 0.7rem;
-  top: 0.3rem;
-  width: 0.5rem;
-  height: 1rem;
+  left: 0.7em;
+  top: 0.3em;
+  width: 0.5em;
+  height: 1em;
   border: solid #7e8925;
-  border-width: 0 0.2rem 0.2rem 0;
+  border-width: 0 0.2em 0.2em 0;
   transform: rotate(45deg);
 }
 
@@ -719,18 +748,6 @@ p {
   display: block;
 }
 
-.plan-box {
-  background-color: #ffffff;
-  border-radius: 2rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-.plan-box {
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 20px;
-  margin-bottom: 20px;
-}
 .get-app2 {
   background-color: #7e8925;
   color: #ffffff;
@@ -754,7 +771,7 @@ p {
 }
 
 .get-app2:hover {
-  background-color: #ffffff;
+  background-color: #d0d893;
   color: #7e8925;
   border-color: #7e8925;
 }
