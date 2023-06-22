@@ -345,33 +345,46 @@ p {
   font-size: 2rem;
 }
 .parrafo_titulo{
-  color:white;
   text-align: center;
 }
 .parrafo1{
-  color:white;
   text-align: center;
+}
+.parrafo1 p{
+  width: 400px;
+  margin: 0 auto;
+  white-space: normal;
 }
 .parrafo1 h4{
   font-size: 1.7rem;
 }
-.parrafo2{
-  color:white;
+.parrafos_derecha{
   text-align: center; 
+}
+.parrafos_izquierda{
+  text-align: center; 
+}
+.parrafo2 {
+  width: 400px;
+  margin: 0 auto;
+  white-space: normal;
 }
 .parrafo2 h4{
   font-size: 1.7rem;
 }
-.parrafo3{
-  color:white;
-  text-align: center;
+.parrafo3 {
+  white-space: normal;
+  margin: 0 auto;
+  width: 400px;
 }
 .parrafo3 h4{
   font-size: 1.7rem;
 }
-.parrafo4{
-  color:white;
+.parrafo4 p{
+  width: 400px;
   text-align: center;
+  white-space: normal;
+  margin: 0 auto;
 }
 .parrafo4 h4{
   font-size: 1.7rem;
@@ -406,21 +419,23 @@ p {
   }
   #derecha{
     text-align: right; /*parrafo este alineado a la derecha*/
-    margin-left: 5rem; 
+    margin-left: 25rem; 
   }
   #izquierda{
     text-align: left; /*parrafo este alineado a la izquierda*/
-    margin-right: 4rem;
+    margin-right: 25rem;
   }
-  .parrafo3{
+  .parrafos_izquierda{
     flex: 1;
     color:white;
   }
   #derecha1{
     text-align: right; /*parrafo inferior este alineado a la derecha*/
+    margin-left: 25rem; 
   }
   #izquierda1{
     text-align: left; /*parrafo inferior este alineado a la derecha*/
+    margin-right: 25rem;
   }
   .parrafo4{
     color:white;
