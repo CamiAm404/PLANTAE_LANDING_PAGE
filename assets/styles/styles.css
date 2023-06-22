@@ -10,12 +10,15 @@ body {
   background-color: #E7EFCD;/*color del cuerpo de la pagina*/
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 header  {
   position: sticky;
   top: 0;
   background-color: #E7EFCD;
-  padding: 10px;
+  /* padding: 10px; */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,11 +34,14 @@ header ul{
 
 header .logo {
   float: left;
-  margin-left: 20em; /*Distancia del logo al borde izquierdo */
+  margin-left: 20em;
 }
 
 header.sticky{
-  padding: 0.5rem 10rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 10rem;
+  padding-right: 0;
   background: #E7EFCD;
   z-index: 100000;
 }
