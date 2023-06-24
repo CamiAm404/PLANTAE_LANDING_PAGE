@@ -804,3 +804,46 @@ p {
 .get-app2:hover::before {
   border-color: #ffffff;
 }
+/*CSS BOTON DE VOZ*/
+.floating-button {
+  position: fixed;
+  bottom: 55px;
+  right: 20px;
+  z-index: 9999;
+}
+
+.floating-button button {
+  width: auto;
+  height: auto;
+  border-radius: 5px;
+  background: linear-gradient(#327534, #327534);
+  color: #fff;
+  padding: 16px 28px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra suave */
+  border: none;
+  outline: none;
+  transition: background-color 0.3s ease;
+}
+
+.floating-button button:hover {
+  background-color: #6ea522; /* Aumenta la saturación del color */
+  cursor: pointer;
+}
+
+.speech-text {
+  display: none;
+  position: absolute;
+  color: #000;
+  padding: 10px;
+  border-radius: 0;
+  background-color: transparent; /* Elimina el fondo */
+  border: none; /* Elimina el borde */
+  white-space: nowrap;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  resize: none; /* Evita que el textarea sea redimensionable */
+}
