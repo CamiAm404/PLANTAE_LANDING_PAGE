@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
       } else if (transcript.includes('sección interfaz')) {
         window.location.href = '#interfaz';
       } else if (transcript.includes('sección planes')) {
-        window.location.href = '#tercera_parte';
+        window.location.href = '#planes_voz';
       }
     };
   } else {
