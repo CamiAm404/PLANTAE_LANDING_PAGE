@@ -890,7 +890,7 @@ p {
 
 /* Nuestros Planes */
 
-.plans-container h2{
+.plans-container h2 {
   text-align: center;
   font-size: 2rem;
 }
@@ -915,19 +915,18 @@ p {
   background-color: #ffffff;
   border-radius: 2em;
   padding: 2em;
-  margin-bottom: 2em;
+  margin-bottom: 3em; /* Ajusta la separación inferior aquí */
   height: 25em;
   position: relative;
 }
 
-.plan-get-app{
-  color:inherit;
-  text-decoration: inherit;
+.plan-get-app {
+  color: inherit;
+ text-decoration: inherit;
   position: absolute;
   bottom: 0;
   width: 90%;
   left: 50%;
-  top: 90%;
   transform: translate(-50%, -50%);
 }
 
@@ -975,14 +974,17 @@ p {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 2rem; /* Ajusta la separación superior aquí */
+  margin-bottom: 1rem; /* Ajusta la separación inferior aquí */
   position: relative;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
+
 .enlace {
-  color:inherit;
+  color: inherit;
   text-decoration: inherit;
 }
+
 .get-app2::after {
   content: '\2192'; /* Código de flecha derecha */
   position: absolute;
