@@ -642,8 +642,11 @@ p {
 /* FIN Descargar app */
 
 .back-to-top{
-  background-color: white;
+  background-color: transparent;
   text-align: center;
+  position: fixed;
+  bottom: 4.5rem;
+  left: 3rem;
 }
 
 .back-to-top img{
@@ -822,18 +825,11 @@ p {
   /*Boton back to top*/
 
   .back-to-top{
-    background-color: white;
+    background-color: transparent;
     text-align: center;
+    bottom: 5.3rem;
   }
   
-  .back-to-top img{
-    border: none;
-    height: 50px;
-    width: 50px;
-    cursor: pointer;
-    margin-bottom: 10rem;
-  }
-
   /*Contactanos*/
   .cuadro_grande {
     border-radius: 25px;
