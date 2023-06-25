@@ -190,28 +190,15 @@ list-style: none;
   height: 50rem;
 }
 
-/* 
-Se traslado a la tercera sección
-@media (min-width: 1200px) {
-  .container {
-      flex-direction: row; /* Volver a la dirección de flexión original 
-  }
-
-  .imagen_celular {
-      margin-top: 0; /* Reiniciar el espacio entre el eslogan y la imagen 
-      margin-right: 22.5rem;
-  }
-  
-} */
+/* Se traslado a la tercera sección los media queries */
 
 .imagen_app {
   flex: 1;
-  margin-left: 2.5rem;
-  /* margin-top: 5rem; */
+  margin-left: 3.125rem;
+  margin-top: 5rem;
 }
-
 .imagen_app img {
-  width: 18rem;
+  width: 55rem;
   height: 5.5rem;
 }
 
@@ -279,42 +266,6 @@ Se traslado a la tercera sección
   height: 100%;
 } 
 
-/* Media query para pantallas pequeñas */
-@media (max-width: 600px) {
-  .columna_cuadros {
-    align-items: center;
-  }
-
-  .cuadro_simple {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .right-download-container{
-    text-align: center;
-  }
-
-  .left-download-container{
-    order: 1;
-    margin-left: 0rem;
-  }
-  
-  .right-download-container{
-    order: 2;
-  }
-
-  .plans {
-    justify-content: space-evenly;
-  }
-
-  .plan{
-    margin-right: 2rem;
-  }
-
-  .plan-box{
-    overflow: auto;
-  }
-}
 /*Tercera parte del cuerpo*/
 #fondo{ /*imagen de fondo verde*/
   background-image: url(../images/fondo_verde2.png);
@@ -482,6 +433,35 @@ p {
 
 /* Estilos para tablets (pantallas medianas)*/
 @media (min-width: 1000px) and (max-width: 1449px) {
+/* Primera sección */
+  .slogan h1 {
+    font-size: 3.5rem;
+  }
+  .slogan {
+    padding: 2rem;
+    /* height: 50rem; */
+    height: 40rem;
+    margin-left: 35rem; /* Ajusta este valor según tus necesidades */
+    margin-right: 20rem;
+    width: 900px; 
+  }
+  .cuadro_externo {
+    position: absolute;
+    width: 570px;
+    height: 470px;
+    background-color: transparent;
+    border: 10px solid #483C1F;
+    margin-left: 430px;
+    margin-top: 100px;
+  }
+  .container {
+    flex-direction: row; /* Volver a la dirección de flexión original */
+  }
+  .imagen_celular {
+    margin-top: 0; /* Reiniciar el espacio entre el eslogan y la imagen */
+    margin-right: 22.5rem;
+  }
+
   /* Tercera sección */
   .parrafo_titulo{
     color:white;
@@ -536,6 +516,43 @@ p {
     flex: 1; 
     text-align: center; /*centrar la imagen entre los textos de los 2 primeros parrafos*/
     margin-right: 1rem;
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1000px) {
+  .columna_cuadros {
+    align-items: center;
+  }
+
+  .cuadro_simple {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right-download-container{
+    text-align: center;
+  }
+
+  .left-download-container{
+    order: 1;
+    margin-left: 0rem;
+  }
+  
+  .right-download-container{
+    order: 2;
+  }
+
+  .plans {
+    justify-content: space-evenly;
+  }
+
+  .plan{
+    margin-right: 2rem;
+  }
+
+  .plan-box{
+    overflow: auto;
   }
 }
 
@@ -765,9 +782,6 @@ p {
   color: #fff;
 }
 
-@media screen and (max-width: 700px){
-  
-}
 /* Nuestros Planes */
 
 .plans-container h2{
