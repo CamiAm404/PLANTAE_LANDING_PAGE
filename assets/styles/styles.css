@@ -654,6 +654,14 @@ p {
 }
 
 /*Contactanos*/
+.contact-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Cambio en la dirección de flexión */
+  min-height: 100px; /* Altura mínima para evitar que se solape el contenido */
+}
+
 .fondo_marron {
   background: linear-gradient(to bottom, #ffffff 50%, #483C1F 50%);
   /* height: 850px; */
