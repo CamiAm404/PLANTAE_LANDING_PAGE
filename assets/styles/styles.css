@@ -289,6 +289,10 @@ p {
   width: 6rem;
   height: 6rem;
 }
+.imagen-icono1 {
+  width: 4.5rem;
+  height: 4.5rem;
+}
 .imagen img {
 
   width: 25rem;
@@ -303,6 +307,8 @@ p {
 .parrafo_titulo{
   color:white;
   text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
 }
 .parrafo1{
   color:white;
@@ -377,6 +383,8 @@ p {
     color:white;
     text-align: center;
     margin-left: 5rem; 
+    max-width: 600px;
+    margin: 0 auto;
   }
   .parrafo1{
     color:white;
@@ -467,6 +475,8 @@ p {
     color:white;
     text-align: center;
     margin-left: 5rem; 
+    max-width: 600px;
+    margin: 0 auto;
   }
   .parrafo1 p{
     max-width: 400px; /* El ancho máximo deseado */
@@ -518,43 +528,7 @@ p {
     margin-right: 1rem;
   }
 }
-
-/* Media query para pantallas pequeñas */
-@media (max-width: 1000px) {
-  .columna_cuadros {
-    align-items: center;
-  }
-
-  .cuadro_simple {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .right-download-container{
-    text-align: center;
-  }
-
-  .left-download-container{
-    order: 1;
-    margin-left: 0rem;
-  }
-  
-  .right-download-container{
-    order: 2;
-  }
-
-  .plans {
-    justify-content: space-evenly;
-  }
-
-  .plan{
-    margin-right: 2rem;
-  }
-
-  .plan-box{
-    overflow: auto;
-  }
-}
+/* Estilos para pantallas pequeñas luego del footer*/
 
 /* Fin tercera parte del cuerpo */
 
@@ -679,10 +653,11 @@ p {
   cursor: pointer;
 }
 
-/*Pie de Pagina*/
+/*Contactanos*/
 .fondo_marron {
-  background-color: #483C1F;
-  height: 850px;
+  background: linear-gradient(to bottom, #ffffff 50%, #483C1F 50%);
+  /* height: 850px; */
+  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -695,7 +670,13 @@ p {
   padding: 20px;
   width: 900px;
   text-align: center;
+  box-shadow: 0.2rem 0.7rem 1rem;
 }
+
+.cuadro_grande h4 {
+  font-size: 16px;
+}
+
 .imagen_email {
   display: flex;
   justify-content: center;
@@ -726,7 +707,9 @@ p {
   flex-direction: row;
   margin-top: 20px;
 }
+/*Fin Contactanos*/
 
+/*Pie de Pagina*/
 .footer{
   width: 100%;
   background-color: #483C1F;
@@ -754,6 +737,12 @@ p {
   color: #fff;
   text-decoration: none;
 }
+.navegacion__enlace {
+  margin-right: 1.5rem;
+}
+.navegacion__enlace1 {
+  padding: 2rem;
+}
 .barra1 img{
   border-radius: 25px;
   width: 140px;
@@ -767,19 +756,132 @@ p {
   color: #fff;
   text-decoration: none;
 }
+.barra3 {
+  max-width: 40rem;
+} 
 .barra3 img{
-  width: 50%;
-  height: 55%;
+  width: 15rem;
+  height: 5rem;
 } 
 .barra3 h3{
   color: #fff;
 }
 .contenedor2{
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.7rem;
 }
 .contenedor2 small{
   color: #fff;
+}
+/*Fin Pie de Pagina*/
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 1000px) {
+  .columna_cuadros {
+    align-items: center;
+  }
+
+  .cuadro_simple {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .right-download-container{
+    text-align: center;
+  }
+
+  .left-download-container{
+    order: 1;
+    margin-left: 0rem;
+  }
+  
+  .right-download-container{
+    order: 2;
+  }
+
+  .plans {
+    justify-content: space-evenly;
+  }
+
+  .plan{
+    margin-right: 2rem;
+  }
+
+  .plan-box{
+    overflow: auto;
+  }
+
+  /*Boton back to top*/
+
+  .back-to-top{
+    background-color: white;
+    text-align: center;
+  }
+  
+  .back-to-top img{
+    border: none;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
+    margin-bottom: 10rem;
+  }
+
+  /*Contactanos*/
+  .cuadro_grande {
+    border-radius: 25px;
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 342px;
+    height: 310px;
+    text-align: center;
+    box-shadow: 0.2rem 0.7rem 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cuadro_grande h4 {
+    font-size: 16px;
+  }
+  
+  .union_iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .imagen_email,
+  .imagen_wsp {
+    margin-bottom: 20px;
+  }
+  
+  .imagen_email img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .imagen_wsp img {
+    width: 60px;
+    height: 60px;
+  }
+
+  /*Footer*/
+  .contenedor1 {
+    grid-template-columns: 1fr; /* Cambia a una sola columna en dispositivos móviles */
+  }
+  .barra2,.barra3 {
+    margin-top: 20px; /* Agrega un margen superior para separar los elementos en dispositivos móviles */
+  }
+  .barra2 {
+    margin-left: 40px;
+  }
+  .barra3 {
+    margin-left: 20px;
+  }
 }
 
 /* Nuestros Planes */
