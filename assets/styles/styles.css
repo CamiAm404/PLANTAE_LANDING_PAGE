@@ -76,6 +76,42 @@ padding: 5px;
 margin-right: 200px ;
 list-style: none;
 }
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  header .logo {
+    margin-left: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  header .menu li {
+    display: block;
+    margin-right: 0;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .get-app {
+    margin-right: 0;
+  }
+  header.sticky{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 0;
+    background: #E7EFCD;
+    z-index: 100000;
+  }
+  
+  
+}
 /*Slider*/
 
 #slider {
