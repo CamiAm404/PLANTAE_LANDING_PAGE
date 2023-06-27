@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
       mostrarTexto(transcript);
 
       // Verificar el texto de voz y navegar a la sección correspondiente
-      if (transcript.includes('sección nuestra app')) {
+    if (transcript.includes('sección nuestra app')) {
         window.location.href = '#nuestra_app';
       } else if (transcript.includes('sección características')) {
         window.location.href = '#tercera_parte';
@@ -53,6 +53,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = '#interfaz';
       } else if (transcript.includes('sección planes')) {
         window.location.href = '#planes_voz';
+      } else if (transcript.includes('sección contáctanos')) {
+        window.location.href = '#footer';
       }
     };
   } else {
