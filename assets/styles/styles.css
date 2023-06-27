@@ -16,7 +16,6 @@ header  {
   position: sticky;
   top: 0;
   background-color: #E7EFCD;
-  /* padding: 10px; */
   padding-top: 1rem;
   padding-bottom: 1rem;
   display: flex;
@@ -288,7 +287,6 @@ list-style: none;
   position: relative;
   padding-bottom: 30px;  /*Proporción del video (altura / anchura) */
   padding-top: 30px; /* Espacio adicional arriba del iframe (opcional) */
-  /* height: 0; */
   max-width: 100%;
   overflow: hidden;
   margin-bottom: -5px;
@@ -391,7 +389,6 @@ p {
   }
   .slogan {
     padding: 2rem;
-    /* height: 50rem; */
     height: 40rem;
     margin-left: 35rem; /* Ajusta este valor según tus necesidades */
     margin-right: 20rem;
@@ -441,12 +438,10 @@ p {
   }
   #derecha{
     text-align: right; /*parrafo este alineado a la derecha*/
-   /*  margin-left: 5rem; */
     margin-left: 30rem;
   }
   #izquierda{
     text-align: left; /*parrafo este alineado a la izquierda*/
-    /* margin-right: 4rem; */
     margin-right: 30rem;
   }
   .parrafo3{
@@ -483,7 +478,6 @@ p {
   }
   .slogan {
     padding: 2rem;
-    /* height: 50rem; */
     height: 40rem;
     margin-left: 35rem; /* Ajusta este valor según tus necesidades */
     margin-right: 20rem;
@@ -532,12 +526,10 @@ p {
   #derecha{
     text-align: right; /*parrafo este alineado a la derecha*/
     margin-left: 5rem;
-    /* margin-left: 30rem; */
   }
   #izquierda{
     text-align: left; /*parrafo este alineado a la izquierda*/
     margin-right: 4rem;
-    /* margin-right: 30rem; */
   }
   .parrafo3{
     flex: 1;
@@ -703,7 +695,6 @@ p {
 
 .fondo_marron {
   background: linear-gradient(to bottom, #ffffff 50%, #483C1F 50%);
-  /* height: 850px; */
   height: 250px;
   display: flex;
   justify-content: center;
@@ -1049,7 +1040,8 @@ p {
 }
 
 .us_container h1{
-  font-size: 2rem;
+  font-size: 2.3rem;
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
