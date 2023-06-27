@@ -55,6 +55,8 @@ document.addEventListener('DOMContentLoaded', function() {
         window.location.href = '#planes_voz';
       } else if (transcript.includes('sección contáctanos')) {
         window.location.href = '#footer';
+      } else if (transcript.includes('sección nosotros')) {
+        window.location.href = '#nosotros';
       }
     };
   } else {

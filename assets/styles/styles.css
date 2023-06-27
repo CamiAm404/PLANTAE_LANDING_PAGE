@@ -1041,6 +1041,25 @@ p {
 .get-app2:hover::before {
   border-color: #ffffff;
 }
+
+/*Sección Nosotros*/
+.us_container {
+  background-color: #74af4a;
+  text-align: center;
+}
+
+.us_container h1{
+  font-size: 2rem;
+  color: white;
+}
+
+.texto_nosotros {
+  max-width: 900px;
+  margin: 0 auto;
+  color: white;
+}
+
+
 /*CSS BOTON DE VOZ*/
 .floating-button {
   position: fixed;
