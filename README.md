@@ -2,7 +2,7 @@
 ### Información del proyecto
 El landing page de Plantae busca promocionar entre los usuarios el aplicativo móvil de Plantae App el cual tiene como principal objetivo indicar a las personas el nombre de las plantas que se encuentren cuando estén realizando paseos por los parques, bosques o las que vean en los jardines de sus vecinos al realizarles un escaneo con la cámara del celular. Además, también cuenta con consejos relacionados al cuidado de las plantas, consultas a horticultores expertos y lugares donde pueden adquirir ciertas plantas.
 
-Puedes visitar nuestra landing page [aquí]([https://plantae-app.com/ "aquí"](https://camiam404.github.io/PLANTAE_LANDING_PAGE/)) 
+Puedes visitar nuestra landing page [aquí](https://camiam404.github.io/PLANTAE_LANDING_PAGE) 
 
 ### Autores:
 - Camila Amaro
